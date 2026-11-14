@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace EF_CORE2
+{
+    public class OrganizerProfile
+    {
+        public int OrganizerId { get; set; }   
+        public string? Biography { get; set; }
+        public string? WebsiteUrl { get; set; }
+        public string? LogoUrl { get; set; }
+
+        public Organizer Organizer { get; set; } = null!;
+    }
+}
